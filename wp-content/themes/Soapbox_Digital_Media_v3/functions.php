@@ -315,3 +315,17 @@ function add_social_before_the_content( $content ) {
 }
 
 add_filter( 'the_content', 'add_social_before_the_content' );
+
+//WOO COMMERCE HOOKS 
+
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
+
+// Remove Product Tab
+
+add_filter( 'woocommerce_product_tabs', 'sb_woo_remove_reviews_tab', 98);
+function sb_woo_remove_reviews_tab($tabs) {
+
+ unset($tabs['reviews']);
+
+ return $tabs;
+}

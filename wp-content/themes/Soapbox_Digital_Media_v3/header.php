@@ -149,6 +149,15 @@
                 }
             <?php endif; ?>
 
+            <?php if( is_woocommerce() ) : ?>
+                .author-box {
+                    display: none;
+                }
+                .tabs {
+                    display: none;
+                }
+            <?php endif; ?>
+
         </style>
     <?php wp_head(); ?>
     </head>

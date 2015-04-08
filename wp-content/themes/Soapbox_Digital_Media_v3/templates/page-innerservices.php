@@ -1,32 +1,32 @@
 <section id="services">
         
-  <h2 class="wow fadeInDown">WHAT WE DO</h2>
-  <div class="divider-line aligncenter wow fadeInUp"></div>
-    
-<a href="/websites">
+  <h2>BEST SELLERS</h2>
+  <div class="divider-line-grey aligncenter wow fadeInUp"></div>
+  
+    <a href="/websites">
       <div class="services-icon wow fadeInUp">
-      <a href="/web-design" class="img-sprite-websites"></a>
-        <h3>WEBSITES</h3>
-        <p>What makes our websites different?</p>
-        <p><a href="/web-design">READ MORE</a></p>
+        <img class="aligncenter icon-bc" src="/wp-content/themes/Soapbox_Digital_Media_v3/images/businesscard.svg" alt="Business Cards">
+        <h3>Business Cards</h3>
+        <p>Great quality business cards from £21</p>
+        <p><a href="/web-design">FIND OUT MORE</a></p>
       </div>
     </a>
 
     <a href="/digital-marketing">
       <div class="services-icon wow fadeInUp">
-      <a href="/digital-marketing" class="img-sprite-marketing"></a>
-        <h3>MARKETING</h3>
-        <p>Looking to get found online?</p>
-        <p><a href="/digital-marketing">READ MORE</a></p>
+        <img class="aligncenter icon-bc" src="/wp-content/themes/Soapbox_Digital_Media_v3/images/leaflet.svg" alt="Leaflets">
+        <h3 class="magenta">Leaflets</h3>
+        <p>Fast leaflet printing from £23</p>
+        <p><a class="magenta" href="/digital-marketing">FIND OUT MORE</a></p>
       </div>
     </a>
 
     <a href="/portfolio">
       <div class="services-icon wow fadeInUp">
-        <a href="/portfolio" class="img-sprite-design"></a>
-        <h3>PORTFOLIO</h3>
-        <p>Like to see what we can do?</p>
-        <p><a href="/portfolio">READ MORE</a></p>
+        <img class="aligncenter icon-bc" src="/wp-content/themes/Soapbox_Digital_Media_v3/images/flyer.svg" alt="Leaflets">
+        <h3 class="cyan">Flyers</h3>
+        <p>Thick hand-outs from £26</p>
+        <p><a class="cyan" href="/portfolio">FIND OUT MORE</a></p>
       </div>
     </a>
 

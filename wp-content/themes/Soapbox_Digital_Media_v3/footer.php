@@ -140,6 +140,8 @@
                 }, 500);
             });
 
+        $( " div.images img" ).addClass( "aligncenter" );
+
         $('.disclaimer-text').after('<div class="backToTop"><a href="#">TAKE IT TO THE BRIDGE ^</a></div>');
 
                 $(".backToTop").click(function() {
