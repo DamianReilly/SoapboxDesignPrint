@@ -1,0 +1,16 @@
+<?php get_header(); ?>
+<section class="page">
+	<main>
+		<article id="post-0" class="post not-found">
+			<section class="header">
+				<h1 class="entry-title"><?php _e( 'Not Found', 'blankslate' ); ?></h1>
+			</section>
+			<section class="entry-content">
+				<p><?php _e( 'Nothing found for the requested page. Try a search instead?', 'blankslate' ); ?></p>
+				<?php get_search_form(); ?>
+			</section>
+		</article>
+	</main>
+</section>
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>
