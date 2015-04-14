@@ -156,6 +156,10 @@
                 .tabs {
                     display: none;
                 }
+                .inner-slider {
+                    background: none;
+                    background-color: #252525;
+                }
             <?php endif; ?>
 
         </style>

@@ -329,3 +329,17 @@ function sb_woo_remove_reviews_tab($tabs) {
 
  return $tabs;
 }
+
+add_filter('woocommerce_variable_price_html', 'custom_variation_price', 10, 2);
+
+function custom_variation_price( $price, $product ) {
+     
+     $price = '';
+     $product_title = the_title();
+
+     if ( !$product->min_variation_price || $product->min_variation_price !== $product->max_variation_price ) $price .= '<span class="from">' . $product_title . _x(' from', 'min_price', 'woocommerce') . ' </span>';
+			
+     $price .= woocommerce_price($product->get_price());
+			
+     return $price;
+}
