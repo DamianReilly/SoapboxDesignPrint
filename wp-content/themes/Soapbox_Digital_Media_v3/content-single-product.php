@@ -39,13 +39,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<div class="summary entry-summary">
 		<?php woocommerce_template_single_excerpt();?>
 	</div><!-- .summary -->
+
+	<div class="price-advice">
+		
 		<?php woocommerce_template_single_price(); ?>
 
-	<p class="price-advice">
-		<i class="fa fa-arrow-right"></i> Get a price for your <?php the_title(); ?> now  <span class="greenpipe"> | </span>  Select from the options below <i class="fa fa-arrow-down"></i> 
-	</p>
-	<?php woocommerce_template_single_add_to_cart(); ?>
-	<?php woocommerce_show_product_images();?>
+		<p><i class="fa fa-arrow-down"></i> Get a price for your <?php the_title(); ?> right now.</p> 
+
+			<?php woocommerce_template_single_add_to_cart(); ?>
+
+	</div>
+	<?php // woocommerce_show_product_images();?>
 	<?php woocommerce_output_related_products();?>
 
 	<meta itemprop="url" content="<?php the_permalink(); ?>" />
