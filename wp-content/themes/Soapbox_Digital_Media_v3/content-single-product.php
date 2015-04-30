@@ -40,14 +40,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php woocommerce_template_single_excerpt();?>
 	</div><!-- .summary -->
 
-	<div class="price-advice">
-		
-		<?php woocommerce_template_single_price(); ?>
-
-				<?php 
-		global $product, $post;
-        $variations = $product->get_available_variations();
-        foreach ($variations as $key => $value) {
+	
+		<?php 
+    		global $product, $post;
+            $variations = $product->get_available_variations();
+            foreach ($variations as $key => $value) {
         ?>
         <form action="<?php echo esc_url( $product->add_to_cart_url() ); ?>"method="post" enctype='multipart/form-data'>
             <input type="hidden" name="variation_id" value="<?php echo $value['variation_id']?>" />
@@ -61,12 +58,12 @@ if ( ! defined( 'ABSPATH' ) ) {
                 }
             }
             ?>
-            <table>
+            <table class="layout display responsive-table">
                 <tbody>
                     <tr>
                         <td>
                             <b><?php
-
+                            $value['attributes'] = array_map('ucwords', $value['attributes']);    
                             $value['attributes'] = str_replace('-', ' ', $value['attributes']);
 
 
@@ -90,9 +87,6 @@ if ( ! defined( 'ABSPATH' ) ) {
         <?php
         }; ?>
 
-	</div>
-
-	
 
 	<?php // woocommerce_show_product_images();?>
 	<?php woocommerce_output_related_products();?>

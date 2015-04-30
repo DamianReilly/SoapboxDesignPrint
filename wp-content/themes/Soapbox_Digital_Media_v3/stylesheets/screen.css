@@ -1102,7 +1102,7 @@ header {
 }
 header .logo {
   float: left;
-  padding: 1.5em 0 1.5em 1.5em;
+  padding: 1.5em;
   width: 190px;
   float: left;
   transition: all .2s ease-in-out;
@@ -1157,7 +1157,7 @@ header .store {
 header .mobile-tel {
   display: block;
   float: left;
-  width: 75%;
+  width: 50%;
   float: right;
   margin-right: 0;
   font-size: 0.8em;
@@ -1845,10 +1845,7 @@ main h2, main h3, main h4, main h5, main h6 {
 main p {
   color: #202020;
   line-height: 1.5em;
-  margin-bottom: 0.75em;
-}
-main p:last-child {
-  margin-bottom: 0;
+  margin-bottom: 1.75em;
 }
 main a {
   color: #202020;
@@ -3016,14 +3013,13 @@ ul.related-cs li {
   font-size: 1.2em;
   color: #252525;
   padding: 1em 0;
-  border-bottom: 1px solid #23a186;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
 .price-advice {
-  border-top: 5px solid #23a186;
-  background: #27b99a;
+  border-top: 5px solid #c3c3c3;
+  background: #d3d3d3;
   padding: 2em 2em 0.75em;
   margin: 2em 0;
   font-weight: 900;
@@ -3049,13 +3045,116 @@ ul.related-cs li {
 }
 
 .single_add_to_cart_button {
-  background: #4bc6df;
   border: none;
+  background: transparent;
   text-transform: uppercase;
-  padding: 0.8em 2em 0.5em 2em;
   font-weight: 900;
-  letter-spacing: 0.5px;
-  border-bottom: 5px solid #43adc2;
+  padding: 1.2em 0.5em 1em 0.5em;
+}
+
+/* Product Table */
+
+table th,
+table td{
+  text-align: center;
+  color: #202020;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  table th,
+  table td {
+    width: 25%;
+  }
+}
+table.layout{
+  width: 100%;
+  border-collapse: collapse;
+}
+table.display{
+  margin: 1em 0;
+}
+table.display th,
+table.display td{
+  padding: .3em 1em;
+}
+
+form:nth-child(even) table.display td:nth-child(1) { background: #fff; border-top: 1px solid #a6a6a6;}
+form:nth-child(even) table.display td:nth-child(2) { background: #fff; border-top: 1px solid #a6a6a6;}
+form:nth-child(even) table.display td:nth-child(3) { background: #fff; border-top: 1px solid #a6a6a6;}
+form:nth-child(even) table.display td:nth-child(4) { background: #ef992d; border-bottom: 5px solid #c67c21;}
+@media (min-width: 600px) {
+ form:nth-child(even) table.display td:nth-child(4) { -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease; background: #ef992d; border-right: 5px solid #c67c21; border-left: 15px solid #b3b3b3; border-bottom: none;}
+}
+@media (min-width: 600px) {
+ form:nth-child(even) table.display td:nth-child(4):hover { background: #c67c21; border-right: 5px solid #a9620b; border-left: 15px solid #b3b3b3; border-bottom: none;}
+}
+
+form:nth-child(odd) table.display td:nth-child(1) { background: #dfdfdf; border-top: 1px solid #a6a6a6;}
+form:nth-child(odd) table.display td:nth-child(2) { background: #dfdfdf; border-top: 1px solid #a6a6a6; }
+form:nth-child(odd) table.display td:nth-child(3) { background: #dfdfdf; border-top: 1px solid #a6a6a6; }
+form:nth-child(odd) table.display td:nth-child(4) { background: #ef992d; border-bottom: 5px solid #c67c21;}
+@media (min-width: 600px) {
+ form:nth-child(odd) table.display td:nth-child(4) { -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease; background: #ef992d; border-left: 15px solid #b3b3b3; border-right: 5px solid #c67c21; border-bottom: none;}
+}
+@media (min-width: 600px) {
+ form:nth-child(odd) table.display td:nth-child(4):hover { background: #c67c21; border-right: 5px solid #a9620b; border-left: 15px solid #b3b3b3; border-bottom: none;}
+}
+
+table.responsive-table{
+}
+
+@media (max-width: 30em){
+    table.responsive-table{
+      box-shadow: none;  
+    }
+    table.responsive-table thead{
+      display: none; 
+    }
+  table.display th,
+  table.display td{
+    padding: .5em;
+  }
+    
+  table.responsive-table td:nth-child(1):before{
+    content: 'Quantity';
+  }
+  table.responsive-table td:nth-child(2):before{
+    content: 'Item';
+  }
+  table.responsive-table td:nth-child(1),
+  table.responsive-table td:nth-child(2){
+    padding-left: 25%;
+  }
+  table.responsive-table td:nth-child(1):before,
+  table.responsive-table td:nth-child(2):before{
+    position: absolute;
+    left: .5em;
+    font-weight: bold;
+  }
+  
+    table.responsive-table tr,
+    table.responsive-table td{
+        display: block;
+    }
+    table.responsive-table tr{
+        position: relative;
+        margin-bottom: 1em;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    }
+    table.responsive-table td{
+        border-top: none;
+    }
+    table.responsive-table td.organisationnumber{
+        background: #D5E0CC;
+        border-top: 1px solid #B3BFAA;
+    }
+    table.responsive-table td.actions{
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        background: none;
+    }
 }
 
 /* FlexSlider Necessary Styles

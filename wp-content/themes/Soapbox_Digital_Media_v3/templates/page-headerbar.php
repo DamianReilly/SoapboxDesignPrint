@@ -6,7 +6,7 @@
             PRINTING WORTH SHOUTING ABOUT!<br> <i class="fa fa-phone"></i> CALL US NOW ON <strong>0141 429 2942</strong>
         </p>
         <p class="mobile-tel">
-            <span class="orange">T</span> <strong>0141 429 1356</strong>
+            <span class="orange">T</span> <strong>0141 429 2942</strong>
         </p>
         <p class="store wow fadeIn" data-wow-delay="2s">
             <i class="fa fa-map-marker"></i><a href="/contact-us"><strong> FIND YOUR NEAREST STORE</strong></a><br>
